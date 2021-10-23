@@ -1,9 +1,22 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(4, 4, 27);
+  background-color: rgb(11, 25, 49);
   color: antiquewhite;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+@-ms-viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
 
 #main{
   float: right;
