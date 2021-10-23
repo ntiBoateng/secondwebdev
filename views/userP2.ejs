@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Html and CSS</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body style="text-align:center">
+    <nav id="navi">
+        <a href="/">Home</a> &nbsp; &nbsp;
+      <a href="/users">Users</a> &nbsp; &nbsp;
+      <a href="/resources">Resources</a> &nbsp; &nbsp;
+      <a href="">Downloads</a> &nbsp; &nbsp;
+      <a href="">Buy Me Coffee</a> &nbsp; &nbsp;
+      <a href="/calculate">Calculator</a> &nbsp; &nbsp;
+      <a href="/about">About Us</a> &nbsp; &nbsp;
+
+      </nav>
+      <div style="text-align: center; margin-left: 70px; margin-right: 70px; font-family: Merriweather " >
+      <h2 style="font-size: 50px; color: rgb(21, 136, 243);">Linebreaks and Center Tags</h2>
+
+      <p style="font-size: 20px; text-align: justify;">
+        In our first tutorial we created a Hello World web page. It wasn’t too exciting it just
+        printed our Hello World message to the screen: <br> <br>
+        <span style="color: darkkhaki;">Hello World!</span> <br> <br>
+        Now let’s move forward by adding some text formatting. First let’s add a couple more
+        lines of text. Maybe we want to print the following: <br> <br>
+       <span style="color: darkkhaki;">
+        Hello World! <br><br>
+        My name is Joe.<br><br>
+        My friend is Sally.<br><br>
+    </span>
+        Our HTML looks like this:
+      
+       <pre>
+           <code style="font-size: 20px; text-align: center; color: darkkhaki; display:block" >
+            &lt;!DOCTYPE html&gt; <br> 
+            &lt;html&gt;<br> 
+            &lt;body&gt; <br> 
+            Hello World! <br> 
+            My name is Joe. <br>
+    My friend is Sally. <br> 
+    &lt;/body&gt; <br>
+    &lt;/html&gt;
+           </code>
+       </pre> <br> <br>
+
+
+      </p>
+      <p style="font-size: 20px; text-align: justify;">When you do this and save your html file, and then open it in a browser, what you see is
+        this:
+        <br><br>
+        <span style="color: darkkhaki;">Hello World! My name is Joe. My friend is Sally.</span>
+        <br><br>
+        So even though we put line breaks and some spacing, the browser ignores it. The browser
+        sees one long string of text unless you add tags to tell it how to display that text.</p>
+<h2 style="font-size: 50px; color: rgb(21, 136, 243);">Centering Text</h2> <br>
+<p style="font-size: 20px; text-align: justify;">
+    To center text, what you do is add a center tag. The open tag to use is &lt;center&gt; and the
+        closing tag is &lt;/center&gt;. So we can center the Hello World! string in the following way: 
+        <pre>
+            <code style="font-size: 20px; color: darkkhaki; display: block;">
+                &lt;!DOCTYPE html&gt; <br> 
+        &lt;html&gt;<br> 
+        &lt;body&gt; <br> 
+            &lt;center&gt;Hello World!&lt;/center&gt; <br>
+        My name is Joe. <br>
+        My friend is Sally.
+        &lt;/html&gt;<br> 
+        &lt;/body&gt; <br> 
+        This produces a web page that looks like this: <br> 
+        Hello World! <br>
+        My name is Joe. My friend is Sally.
+            </code>
+        </pre>
+        
+      
+      <p  style="font-size: 20px; text-align: justify;">
+        Notice that closing the center tag added a line break. To center all the text, we would
+        write:
+      </p>
+        
+<div style="text-align: center;">
+<pre>
+    <code style="font-size: 20px; color: darkkhaki; display:block">
+&lt;!DOCTYPE html&gt; <br>
+&lt;html&gt; <br>
+&lt;body&gt; <br>
+&lt;center&gt;<br>
+        Hello World! <br> 
+        My name is Joe. <br>
+        My friend is Sally. <br>
+        &lt;/center&gt; <br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+        Now we obtain: <br>
+        Hello World! My name is Joe. My friend is Sally.
+    </code>
+</pre>
+</div>
+</p>
+</div>
+<a href="/learn/htmlPage1.1" style="font-size: 24px; margin-right: 800px;">Previous Page</a>   <a href="/learn/htmlPage1.3" style="font-size: 24px; margin-left: 800px;">Start Next Tutorial</a>
+
+</body>
+</html>

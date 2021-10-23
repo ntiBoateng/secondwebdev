@@ -1,0 +1,77 @@
+body{
+    margin: 0%;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1633840951366-86f586b24531?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80')
+}
+
+.container{
+   
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+    background: rgb(7, 134, 143)
+}
+
+.container .box{
+    position :relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: rgb(212, 26, 26);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box .content{
+    padding: 15px;
+    top: 60%;
+    margin-top: 10%;
+    margin-top: calc(200px-20px);
+    text-align: center;
+
+    
+
+}
+.container .box .content h2{
+    font-size: 32px;
+    font-family: sans-serif;
+    color: rgb(11, 40, 119);
+}
+
+.container .box .content p{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(7, 43, 97);
+}
+
+#navi{
+    text-align: center;
+    width: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+   }
+
+.container .box:hover .content{
+    margin: 0;
+top: 60%;
+margin-top: 15px;
+margin-right: 1px;
+transition: 0.5s;
+
+}
+
+.hid{
+    display: none;
+}
+.container .box:hover .hid{
+display: block;
+position : absolute;
+box-shadow: firebrick;
+}
