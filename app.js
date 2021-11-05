@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors')
+var helmet = require('helmet')
 
 //calling routes
 var indexRouter = require('./routes/index');
@@ -16,6 +17,7 @@ var userP1 = require('./routes/userP1')
 var userP2 = require('./routes/userP2')
 var userP3 = require('./routes/userP3')
 var userP4 = require('./routes/userP4')
+var login = require('./routes/login')
 
 var app = express();
 
@@ -29,6 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
+app.use(helmet());
 
 
 
@@ -43,7 +46,7 @@ app.use('/learn/htmlPage1.1',userP1)
 app.use('/learn/htmlPage1.2',userP2)
 app.use('/learn/htmlPage1.3',userP3)
 app.use('/learn/htmlPage1.4',userP4)
-
+app.use('/login',login)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

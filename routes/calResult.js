@@ -13,9 +13,11 @@ let cal = new Calculator(n1,n2)
 var result1 = cal.sum
 var result2 = cal.product
 if(rd1.value.checked){
-res.send('adition is '+ result1)
-}else if(rd2.value.chaecked){
-    res.send('product is '+ result2)
+//res.send('adition is '+ result1)
+alert('The addition is '+result1)
+}else if(rd2.value.checked){
+    //res.send('product is '+ result2)
+    alert('The product is '+result2)
 }
 
     //res.render('calResult')
